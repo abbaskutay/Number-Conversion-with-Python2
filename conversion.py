@@ -148,8 +148,8 @@ if __name__ == '__main__':
     0x00 & 0x80 => 0 and -0
     0x7A,0x79 & 0xFA,0xF9 => NaN
     '''
-    number = raw_input("Enter a hex number: ")
-    type = raw_input("Enter a conversion type: ")
+    number = input("Enter a hex number: ")
+    type = input("Enter a conversion type: ")
     num = check_hex_value(number)
     if type == 'F':
         print(convert_hex_to_float(num))
